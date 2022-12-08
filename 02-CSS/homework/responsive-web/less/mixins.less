@@ -1,1 +1,22 @@
 // Mixins acá
+@import './variables.less';
+.navigationButtons () {
+    text-decoration: none;
+    color: black;
+}
+
+.register-button (@reg-bg: @ebony-clay, @reg-color: white){
+    background-color: @reg-bg;
+    color: @reg-color;
+    padding: 5px;
+    border-radius: 8px;
+    
+    &:hover  {
+        scale: 2;
+        background-color: aliceblue;
+        color: black;
+        transition-property: all;
+        transition-duration: 0.5s;
+       
+    }
+}
